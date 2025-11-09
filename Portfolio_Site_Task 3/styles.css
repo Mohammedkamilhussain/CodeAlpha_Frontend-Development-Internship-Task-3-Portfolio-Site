@@ -1,0 +1,20 @@
+:root{--accent:#2b7cff;--muted:#6b7280}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,Arial;background:#f8fafc;color:#0b1220;line-height:1.5}
+a{color:var(--accent);text-decoration:none}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:#fff;box-shadow:0 2px 6px rgba(10,10,20,0.04);position:sticky;top:0;z-index:10}
+.brand{font-weight:700}
+.menu a{margin-left:16px;color:#111}
+.hero{padding:64px 24px;background:linear-gradient(90deg,#ffffff 0%, #eef6ff 100%);text-align:center}
+.hero-inner{max-width:900px;margin:0 auto}
+.hero h1{font-size:32px;margin-bottom:8px}
+.cta{display:inline-block;margin-top:16px;padding:10px 18px;border-radius:8px;background:var(--accent);color:white}
+.container{max-width:1000px;margin:32px auto;padding:0 16px}
+.section{margin-bottom:28px}
+.section h2{margin-bottom:12px}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 8px 20px rgba(15,20,40,0.04)}
+.skills{display:flex;gap:10px;flex-wrap:wrap;list-style:none}
+.skills li{background:#fff;padding:8px 12px;border-radius:999px;box-shadow:0 6px 16px rgba(10,10,30,0.03)}
+.footer{text-align:center;padding:18px;color:var(--muted);font-size:14px}
+@media (max-width:640px){ .hero h1{font-size:24px} .menu a{display:none} }
